@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Sudoku</title>
+</head>
+<body>
+    <dialog class="difficultyMenu">
+        <p>Select Game Difficulty</p>
+        <button class="easyButton">Easy</button>
+        <button class="standardButton">Standard</button>
+        <button class="hardButton">Hard</button>
+    </dialog>
+    <div class ="titleBanner">
+        <p>Sudoku</p>
+    </div>
+    <div class="menuBar">
+        <button class="clearBoardButton">Clear Board</button>
+        <button class="startNewGameButton">New Game</button>
+            <dialog class="areYouSure">
+                <p>Are you sure</p>
+            <button class="yesButton">Yes</button>
+            <button class="noButton">No</button>
+            </dialog>
+    </div>
+
+    <div class="board">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <dialog class="numberPad">
+        <div class="numberPadHeader">
+            <div class="numberPadHeaderText">Select a Number</div>
+            <div class="numberPadHeaderButton">
+                <button class="redButton">X
+                </button>
+            </div>
+        </div>
+
+        <div class="numberPadBody">
+            <button class="numberPadNumber">1</button>
+            <button class="numberPadNumber">2</button>
+            <button class="numberPadNumber">3</button>
+            <button class="numberPadNumber">4</button>
+            <button class="numberPadNumber">5</button>
+            <button class="numberPadNumber">6</button>
+            <button class="numberPadNumber">7</button>
+            <button class="numberPadNumber">8</button>
+            <button class="numberPadNumber">9</button>
+        </div>
+
+        <button class="clearButton">Clear</button>
+    </dialog>
+    
+    <dialog class="failureMenu">
+        <p>Game failed to start.  Please retry</p>
+        <button class="retryButton">Retry</button>
+    </dialog>
+
+    <dialog class="winnerBanner">
+        <p>Congratulations!  You solved the Sudoku challenge!</p>
+        <button class="winnerButton">Start New Game</button>
+    </dialog>
+
+    <div class="artCredit">
+        <a href="https://www.freepik.com/free-photo/shark-sea_10542714.htm">Image by wirestock</a> on Freepik
+    </div>
+    
+</body>
+</html>
